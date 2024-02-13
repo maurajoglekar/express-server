@@ -3,10 +3,10 @@ const express = require("express");
 const app = express();
 const PORT = 8080;
 
-// app.get("/", (req, res) => {
-//   res.status(200);
-//   res.send("This is from root");
-// });
+app.get("/", (req, res) => {
+  res.status(200);
+  res.send("This is from root");
+});
 
 var bodyParser = require("body-parser");
 var shortid = require("shortid");
